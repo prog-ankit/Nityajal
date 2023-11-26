@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "768634370368",
+    "project_id": "water-sensor-6595d",
+    "storage_bucket": "water-sensor-6595d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768634370368:android:e8393a55f0fffba34ea2a5",
+        "android_client_info": {
+          "package_name": "com.example.watersensor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768634370368-9cb2kjavnf9v27e2v6itr8cnqe7l8sdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgXxB5Rv_EHgvhGU4E1rOu5DyAhX7S1e4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768634370368-9cb2kjavnf9v27e2v6itr8cnqe7l8sdd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

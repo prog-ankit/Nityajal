@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auto_setup">
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/leaf_bg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/leaf_bg"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/mainlayer"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/mainlayer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layer1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--           >-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:padding="10dp">-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    -->
+<!--                    android:layout_width="70pt"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:backgroundTint="@color/tcolor"-->
+
+<!--                    android:text="1 Minute"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    app:layout_constraintEnd_toStartOf="@+id/min5"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/min5"-->
+<!--                    android:layout_width="70pt"-->
+<!--                    android:layout_height="70dp"-->
+
+<!--                    android:backgroundTint="@color/tcolor"-->
+<!--                    android:text="5 minute"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/min1"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp">-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:padding="10dp">-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/min10"-->
+<!--                    android:layout_width="70pt"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:backgroundTint="@color/tcolor"-->
+
+<!--                    android:text="10 Minute"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    app:layout_constraintEnd_toStartOf="@+id/min15"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    -->
+<!--                    android:layout_width="70pt"-->
+<!--                    android:layout_height="70dp"-->
+
+<!--                    android:backgroundTint="@color/tcolor"-->
+<!--                    android:text="15 minute"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="14sp"-->
+<!--                    app:cornerRadius="10dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/min10"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

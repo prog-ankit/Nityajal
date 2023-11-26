@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".on_off">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ToggleButton
+        android:id="@+id/dstatbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dgreen"
+        android:fontFamily="@font/amaranth"
+        android:textSize="20sp"
+        android:layout_margin="30dp"
+
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_line2"
+        />
+
+</FrameLayout>

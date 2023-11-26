@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    tools:context=".dashboardView">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_rowWeight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/green"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/dev_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:id="@+id/dname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/amaranth"
+                android:text="Device Name"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                    android:layout_marginTop="5dp"
+                android:text="Device Status: "
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/temp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="5dp"-->
+
+            <!--                android:text="Temparature"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="20sp" />-->
+
+            <!--            <ToggleButton-->
+            <!--                android:id="@+id/dstatbtn"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:textColor="@color/tcolor"-->
+            <!--                android:backgroundTint="@color/bgcolor"-->
+            <!--                android:textOff="OFF"-->
+            <!--                android:textOn="ON" />-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

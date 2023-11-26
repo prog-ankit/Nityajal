@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ToggleButton
+        android:id="@+id/tM"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:textOff="M"
+        android:textOn="M"
+        android:textColor="@color/tcolor"
+        android:fontFamily="@font/rancho"
+        android:textSize="22sp"
+        style="@style/toggleButton"
+        android:background="@drawable/toggle_bg" />
+    <ToggleButton
+        android:id="@+id/tT"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:textOff="T"
+        android:textOn="T"
+
+        android:textColor="@color/tcolor"
+        android:fontFamily="@font/rancho"
+        android:textSize="22sp"
+        style="@style/toggleButton"
+        android:background="@drawable/toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/tW"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:textOff="W"
+        android:textOn="W"
+
+        android:textColor="@color/tcolor"
+        android:fontFamily="@font/rancho"
+        android:textSize="22sp"
+        style="@style/toggleButton"
+        android:background="@drawable/toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/tTh"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:textOff="Th"
+        android:textOn="Th"
+
+        android:textColor="@color/tcolor"
+        android:fontFamily="@font/rancho"
+        android:textSize="22sp"
+        style="@style/toggleButton"
+        android:background="@drawable/toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/tF"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:textOff="F"
+        android:textOn="F"
+
+        android:textColor="@color/tcolor"
+        android:fontFamily="@font/rancho"
+        android:textSize="22sp"
+        style="@style/toggleButton"
+        android:background="@drawable/toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/tSa"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:textOff="SA"
+        android:textOn="SA"
+
+        android:textColor="@color/tcolor"
+        android:fontFamily="@font/rancho"
+        android:textSize="22sp"
+        style="@style/toggleButton"
+        android:background="@drawable/toggle_bg" />
+
+    <ToggleButton
+        android:id="@+id/tSu"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:textOff="Su"
+        android:textOn="Su"
+
+        android:textColor="@color/tcolor"
+        android:fontFamily="@font/rancho"
+        android:textSize="22sp"
+        style="@style/toggleButton"
+        android:background="@drawable/toggle_bg" />
+</LinearLayout>

@@ -1,0 +1,109 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tgreen"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="100dp"-->
+    <!--            android:src="@drawable/leaves"-->
+    <!--            android:layout_marginEnd="10dp"/>-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="100dp"-->
+
+    <!--            android:src="@drawable/leaves" />-->
+    <!--    </LinearLayout>-->
+
+    <ImageView
+        android:id="@+id/topimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/topleaf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/bplant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topimg">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150pt"
+            android:layout_height="150pt"
+            android:src="@drawable/nityajal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/rancho"
+            android:padding="5dp"
+            android:text="NityaJal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/dgreen"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arima_madurai"
+            android:text="@string/let_s_connect_with"
+            android:textColor="@color/dgreen"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arima_madurai"
+            android:padding="5dp"
+            android:text="@string/plants_from_anywhere"
+            android:textColor="@color/dgreen"
+            android:textSize="20sp" />
+        <!--        <ImageView-->
+        <!--            android:layout_width="170dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:src="@drawable/watering_sol"/>-->
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/plant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <ImageView
+        android:id="@+id/bplant"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/plant2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

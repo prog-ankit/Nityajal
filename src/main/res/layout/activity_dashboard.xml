@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_leaf"
+    tools:context=".dashboard">
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:src="@drawable/back_leaf"/>-->
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/applayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:elevation="0.0dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="3pt"
+            android:src="@drawable/nityajal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/amaranth"
+            android:text="NityaJal"
+            android:textColor="@color/dgreen"
+            android:textSize="24sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/dashProgress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="greenleaf.json"
+        app:lottie_loop="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainCard"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:backgroundTint="@color/bgcolor"
+        android:elevation="30dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/nityajal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:padding="5dp"
+                android:text="@string/setup_device"
+                android:textColor="@color/dgreen"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:padding="3dp"
+                android:text="1. Connect to NityaJal Device"
+                android:textColor="@color/dgreen"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:padding="3dp"
+                android:text="2. Connect to a Wifi Network"
+                android:textColor="@color/dgreen"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:padding="3dp"
+                android:text="3. Scan the Device QR Code"
+                android:textColor="@color/dgreen"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:padding="3dp"
+                android:text="4. Setup your WIFI SSID and Password"
+                android:textColor="@color/dgreen"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:padding="3dp"
+                android:text="5. Setup the timers you want to release water"
+                android:textColor="@color/dgreen"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amaranth"
+                android:padding="3dp"
+                android:text="6. Maximum 3 timers can be set"
+
+                android:textColor="@color/dgreen"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/amaranth"
+                android:padding="10dp"
+                android:text="NityaJal E-shop will be available soon!!"
+                android:textColor="@color/dgreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <!--    <com.google.android.material.button.MaterialButton-->
+            <!--        android:id="@+id/wifi"-->
+            <!--        android:layout_width="200dp"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:backgroundTint="@color/navyblue"-->
+
+            <!--        android:layout_marginBottom="10dp"-->
+            <!--        android:textColor="@color/white"-->
+            <!--        android:layout_gravity="center"-->
+            <!--        android:padding="15dp"-->
+            <!--        android:drawableEnd="@drawable/ic_wifi"-->
+            <!--        android:text="Wifi Setup" />-->
+
+
+            <!--        <ListView-->
+            <!--            android:id="@+id/devices"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+
+            <!--            />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+            <TextView
+                android:id="@+id/timeDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/amaranth"
+                android:text="Arranged Timers are: "
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animatedLeaf"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="right"
+                android:visibility="visible"
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="animate_leaf.json"
+                app:lottie_loop="true" />
+        </LinearLayout>
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/flower"-->
+        <!--        android:layout_width="100dp"-->
+        <!--        android:layout_height="150dp"-->
+        <!--        android:layout_marginBottom="40dp"-->
+        <!--        android:src="@drawable/flower"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent" />-->
+
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/rgrass"-->
+        <!--        android:layout_width="203dp"-->
+        <!--        android:layout_height="222dp"-->
+        <!--        android:src="@drawable/grass"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintRight_toRightOf="parent" />-->
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

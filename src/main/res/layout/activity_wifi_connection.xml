@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+
+    tools:context=".wifi_connection">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/wifitoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_cancel" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a Wifi-Network and Enter the Password"
+            android:textColor="@color/dgreen"
+            android:fontFamily="@font/amaranth"
+            android:textSize="22sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/dgreen"
+            app:boxStrokeColor="@color/tcolor"
+            app:hintTextColor="@color/tcolor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/wifiname"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Wifi Name | SSID"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:fontFamily="@font/amaranth"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/dgreen"
+            app:boxStrokeColor="@color/tcolor"
+            app:hintTextColor="@color/tcolor"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/wifipwd"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Password"
+                android:textSize="20sp"
+                android:fontFamily="@font/amaranth"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextSetup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:drawableEnd="@drawable/ic_next"
+            android:backgroundTint="@color/dgreen"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/amaranth"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/plant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
